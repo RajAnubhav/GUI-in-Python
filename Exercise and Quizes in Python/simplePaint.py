@@ -46,11 +46,11 @@ def exit_file():
 
 def paint(event):
     x1, y1 = (event.x-1), (event.y-1)
-    x2, y2 = (event.x), (event.y)
+    x2, y2 = (event.x+2), (event.y+2)
     color = "black"
     
     # displaying the mouse movement inside canvas
-    # tabs.p1.create_oval(x1, y1, x2, y2, fill=color, outline=color)
+    p1.create_oval(x1, y1, x2, y2, fill=color, outline=color)
 
 m = Menu(root, tearoff=0)
 
@@ -132,19 +132,6 @@ p1 = Canvas(root, bg="white", width=720, height=400)
 p1.bind("<B1-Motion>", paint)
 p1.pack()
 root.configure(bg="#007FFF")
-
-# '''this is to add the tabs in the window'''
-# tabs= ttk.Notebook(root)
-# tab_a = ttk.Frame(tabs)
-# tab2 = ttk.Frame(tabs)
-
-# tabs.add(tab_a, text="Get Started")
-# tabs.add(tab2, text="Tab 2")
-# tabs.pack(expand=1, fill=BOTH)
-# # coding for the tab1
-# # label = Label(text="QR Code Generator", font="Courier 23 bold", pady=40, fg="Black", background="light pink").pack(fill= BOTH)
-# ttk.Label(tab_a, text="This is tab one").pack()
-# ttk.Label(tab2, text="This is tab two").pack()
 
 label1 = Label(root, text="Designed at AR Labs", pady=10, bg="#007FFF", fg="White", font="Courier 13 bold").pack()
 # this is for the menu-bar

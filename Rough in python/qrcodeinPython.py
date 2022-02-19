@@ -3,7 +3,7 @@
 
 import qrcode
 import cv2
-s= "https://www.google.com"
+s= "hello anshuman"
 img = qrcode.make(s)
 img.save("myqr1.png")
 
