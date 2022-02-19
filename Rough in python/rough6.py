@@ -23,20 +23,20 @@ class Paint:
         color= "black"
         self.p1.create_oval(x1, y1, x2, y2, fill=color, outline=color)
 
-    def pen_control(self):
-        self.p1.bind("<Button-1>", self.paint_screen)
-        self.p1.pack()
-        self.root.configure(bg="#007FFF")
+    # def pen_control(self):
+    #     self.p1.bind("<Button-1>", self.paint_screen)
+    #     self.p1.pack()
+    #     self.root.configure(bg="#007FFF")
 
 
     def run(self):
         self.root.mainloop()
 
 pt = Paint()
-# p1 = Canvas(pt.root, bg="white", width=540, height=480)
-# p1.bind("<Button-1>", pt.create_mouse_control)
-# p1.pack()
-# pt.root.configure(bg="#007FFF")
+p1 = Canvas(pt.root, bg="white", width=540, height=480)
+p1.bind("<Button-1>", pt.create_mouse_control)
+p1.pack()
+pt.root.configure(bg="#007FFF")
 pt.pen_control()
 
 
