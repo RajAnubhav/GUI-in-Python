@@ -19,10 +19,6 @@ def addBtn(num):
     e.delete(0, END)
     e.insert(0, str(current)+str(num))
 
-def clearBtn_C():
-    addBtn()
-    curr = current%10
-    e.delete(current-curr, END)
 
 def clearBtn():
     e.delete(0, END)
@@ -44,7 +40,7 @@ b11 = Button(root, text="0", padx=29, pady=20, command= lambda:addBtn(0)).grid(r
 b12 = Button(root, text=".", padx=31, pady=20, command= lambda:addBtn(".")).grid(row=5, column=2)
 b13 = Button(root, text="%", padx=29, pady=20, command= lambda:addBtn("%")).grid(row=1, column=0)
 b14 = Button(root, text="CE", padx=27, pady=20, command= clearBtn).grid(row=1, column=1)
-b15 = Button(root, text="C", padx=29, pady=20, command= addBtn).grid(row=1, column=2)
+b15 = Button(root, text="*", padx=29, pady=20, command= addBtn).grid(row=1, column=2)
 b16 = Button(root, text="=", padx= 19, pady=20, height=6, command= lambda:addBtn("=")).grid(row=3, column=4, rowspan=5)
 b17 = Button(root, text="+", padx=19, pady=23, command= lambda:addBtn("+")).grid(row=2, column=4)
 b17 = Button(root, text="-", padx=20, pady=23, command= lambda:addBtn("-")).grid(row=1, column=4)
