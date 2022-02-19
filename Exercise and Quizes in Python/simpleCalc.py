@@ -1,6 +1,6 @@
 from asyncio import events
 from distutils import command
-from sqlite3 import Row
+from sqlite3 import Rows
 from tkinter import *
 from tkinter import ttk
 
