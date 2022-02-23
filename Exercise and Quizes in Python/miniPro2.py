@@ -21,6 +21,7 @@ frame2 = ttk.Frame(pandedwindow, width=610, height=440, relief=SUNKEN)
 pandedwindow.add(frame1, weight=1)
 pandedwindow.add(frame2, weight=4)
 
+
 '''This section will contain the menu functions'''
 def openNewFile():
     pass
